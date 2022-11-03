@@ -20,6 +20,16 @@ public class Main {
             System.out.println("Не получится сварить зелье :(");
         }
 
+        // Level1:
+        // В Китае живет 1 411 778 724 человек, всего в мире 197 стран.
+        // Сколько бы человек жило на земле, если бы в каждой стране жило население, равное китайскому?
+        long populationChina = 1_411_778_724L;
+        int countryCounter = 197;
+        long populationTotal = populationChina * countryCounter;
+        System.out.printf("На Земле жило бы %,d человек\n", populationTotal);
+
+
+
         // Level2:
         // Феликс прожил 3_011_456_567 секунд.
         // Сколько лет прожил Феликс?

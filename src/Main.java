@@ -3,6 +3,27 @@ public class Main {
         // ClassWork();
 
         // Level1:
+        // В Китае живет 1 411 778 724 человек, всего в мире 197 стран.
+        // Сколько бы человек жило на земле, если бы в каждой стране жило население, равное китайскому?
+        long populationChina = 1_411_778_724L;
+        int countryCounter = 197;
+        long populationTotal = populationChina * countryCounter;
+        System.out.printf("На Земле жило бы %,d человек\n", populationTotal);
+
+        // Level2:
+        // Феликс прожил 3_011_456_567 секунд.
+        // Сколько лет прожил Феликс?
+        // Посчитать, используя Java, Long-переменные и деление.
+        long ttlInSeconds = 3_011_456_567L;
+
+        // В минуты, в часы, в дни, в годы (в одной секунде - 1/31_536_000 года)
+        double ttlInYears = (double) ttlInSeconds / 60 / 60 / 24 / 365;
+        System.out.printf("Феликс прожил %.0f лет (без учета високосных годов) и еще %.0f месяцев\n",
+                ttlInYears, Math.floor(ttlInYears % 1 * 12));
+
+
+
+        // Level1:
         // Астерикс и Обеликс варили зелье.
         // Зелье будет сварено правильно, если его будут варить больше 5 часов.
         // Астерикс варил его 3 часа, Обеликс в два раза меньше.
@@ -19,27 +40,6 @@ public class Main {
         } else {
             System.out.println("Не получится сварить зелье :(");
         }
-
-        // Level1:
-        // В Китае живет 1 411 778 724 человек, всего в мире 197 стран.
-        // Сколько бы человек жило на земле, если бы в каждой стране жило население, равное китайскому?
-        long populationChina = 1_411_778_724L;
-        int countryCounter = 197;
-        long populationTotal = populationChina * countryCounter;
-        System.out.printf("На Земле жило бы %,d человек\n", populationTotal);
-
-
-
-        // Level2:
-        // Феликс прожил 3_011_456_567 секунд.
-        // Сколько лет прожил Феликс?
-        // Посчитать, используя Java, Long-переменные и деление.
-        long ttlInSeconds = 3_011_456_567L;
-
-        // В минуты, в часы, в дни, в годы (в одной секунде - 1/31_536_000 года)
-        double ttlInYears = (double) ttlInSeconds / 60 / 60 / 24 / 365;
-        System.out.printf("Феликс прожил %.0f лет (без учета високосных годов) и еще %.0f месяцев\n",
-                ttlInYears, Math.floor(ttlInYears % 1 * 12));
     }
 
     public static void ClassWork() {

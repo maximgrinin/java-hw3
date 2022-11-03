@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
         // ClassWork();
@@ -40,6 +42,19 @@ public class Main {
         } else {
             System.out.println("Не получится сварить зелье :(");
         }
+
+        // Level2:
+        // Вводится число. Если оно четное, то выведите true, иначе false
+        System.out.println();
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Введите число: ");
+        int inputValue = scanner.nextInt();
+        if (inputValue % 2 == 0) {
+            System.out.println("Четное");
+        } else {
+            System.out.println("Нечетное");
+        }
+
     }
 
     public static void ClassWork() {
